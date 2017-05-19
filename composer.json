@@ -1,5 +1,8 @@
 {
     "require": {
         "algolia/algoliasearch-client-php": "^1.17"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^121.0"
     }
 }
