@@ -1,14 +1,18 @@
 # Appstore API
 
+[View home page](https://appstore-noclat.herokuapp.com/)
+
 ## Test
 
-
+1. [Download and install Postman](https://www.getpostman.com/)
+2. Import [util/prod.postman.json](util/prod.postman.json)
+3. Run the HTTP requests
 
 ## Run locally
 
 ```
-git clone git@github.com:noclat/appstore-front.git
-cd appstore-front
+git clone git@github.com:noclat/appstore-back.git
+cd appstore-back
 composer install
 ```
 
