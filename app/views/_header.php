@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?= $title ?></title>
 	<meta name="robots" content="noindex, nofollow">
+	<link rel="shortcut icon" href="<?= assets('favicon.png') ?>">
 	<link href="<?= assets('github-markdown.css') ?>" rel="stylesheet">
 	<style>
 		.markdown-body {

@@ -12,11 +12,11 @@ class AppsModel
 
 	public function save(Array $data, $id = null) {
 		$data = array_intersect_key($data, array_flip($this->allowed_properties));
-		if ($id) $data['objectID'] = $id;
+		$data['objectID'] = $id ?? uniqid();
 		return $this->index->saveObject($data);
 	}
 
 	public function delete($id = null) {
-		$this->index->deleteObject($id);
+		return $this->index->deleteObject($id);
 	}
 }

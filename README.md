@@ -1,8 +1,8 @@
-# Appstore API
+# Algolia Appstore back-end
 
 [View home page](https://appstore-noclat.herokuapp.com/)
 
-## Test
+## Test API
 
 1. [Download and install Postman](https://www.getpostman.com/)
 2. Import [util/prod.postman.json](util/prod.postman.json)

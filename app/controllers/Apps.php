@@ -23,27 +23,27 @@ class Apps extends Controller
 			], 400);
 		} else {
 			// Save
-			$id = $this->AppsModel->save([
+			$result = $this->AppsModel->save([
 				'name' => $validation->get('name'),
 				'image' => $validation->get('image'),
 				'link' => $validation->get('link'),
 				'category' => $validation->get('category'),
-				'rank' => (int)$_POST['rank'],
+				'rank' => (int)$validation->get('rank'),
 			]);
 
 			// Response
 			$this->response([
 				'status' => 'ok',
-				'created_id' => $id,
+				'result' => $result,
 			]);
 		}
 	}
 
 	public function delete($id = null) {
-		$this->AppsModel->delete($id);
+		$result = $this->AppsModel->delete($id);
 		$this->response([
 			'status' => 'ok',
-			'deleted_id' => $id,
+			'result' => $result,
 		]);
 	}
 }

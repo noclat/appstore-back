@@ -1,0 +1,67 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Appstore dev",
+		"_postman_id": "1dde1737-b303-9005-aed7-f78bcde4c803",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST apps",
+			"request": {
+				"url": "http://localhost/appstore-back/api/1/apps",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Appstore",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "link",
+							"value": "https://appstore.ntorres.com",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "image",
+							"value": "https://appstore.ntorres.com/images/logo.svg",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "category",
+							"value": "Catalogs",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "rank",
+							"value": "81",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE apps",
+			"request": {
+				"url": "http://localhost/appstore-back/api/1/apps/59201481d27eb",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
