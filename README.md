@@ -2,11 +2,13 @@
 
 [View home page](https://appstore-noclat.herokuapp.com/)
 
-## Test API
+## Test the API
 
 1. [Download and install Postman](https://www.getpostman.com/)
 2. Import [util/prod.postman.json](util/prod.postman.json)
 3. Run the HTTP requests
+
+*Don't forget to replace the ID in the `DELETE apps` request URL with the one you got from the `POST apps` result.*
 
 ## Run locally
 
@@ -28,6 +30,11 @@ php composer.phar install
 ```
 
 [Full instructions](https://getcomposer.org/doc/00-intro.md)
+
+## Notes
+
+- The first request response time may last a few seconds due to Heroku free plan limitations.
+- The documentation of the router is available at [util/R76-doc.md](util/R76-doc.md).
 
 ## Resources
 

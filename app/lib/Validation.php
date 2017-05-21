@@ -1,5 +1,5 @@
 <?php
-class validation
+class Validation
 {
 	protected $rules = [];
 	protected $errors = [];
