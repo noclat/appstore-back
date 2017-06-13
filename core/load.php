@@ -5,7 +5,6 @@ load(basename(__DIR__));
 
 // load composer dependencies
 include_once __DIR__ . '/../vendor/autoload.php';
-include_once __DIR__ . '/../vendor/autoload.php';
 
 // load application
 load(rtrim(APP_DIR, '/') . '/config');
